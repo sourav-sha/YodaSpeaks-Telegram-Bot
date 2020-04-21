@@ -1,2 +1,37 @@
-# YodaSpeaks-Telegram-Bot
-A Telegram Bot in Python which converts from English to Yoda speak. Yoda is a fictional character from the Movie star wars.
+<h1 align="center">Welcome to YodaSpeaks-Telegram-Bot 👋</h1>
+<p>
+  <a href="https://github.com/issourav/YodaSpeaks-Telegram-Bot/blob/master/README.md" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/issourav/YodaSpeaks-Telegram-Bot/blob/master/LICENSE" target="_blank">
+    <img alt="License: MIT License" src="https://img.shields.io/badge/License-MIT License-yellow.svg" />
+  </a>
+  <a href="https://twitter.com/issourav" target="_blank">
+    <img alt="Twitter: issourav" src="https://img.shields.io/twitter/follow/issourav.svg?style=social" />
+  </a>
+</p>
+
+> A Telegram Bot in Python which converts from English to Yoda speak. Yoda is a fictional character from the Movie star wars.
+
+### 🏠 [Homepage](https://github.com/issourav/YodaSpeaks-Telegram-Bot)
+
+## Author
+
+👤 **Sourav Sharma**
+
+* Website: https://issourav.github.io/
+* Twitter: [@issourav](https://twitter.com/issourav)
+* Github: [@issourav](https://github.com/issourav)
+* LinkedIn: [@issourav](https://linkedin.com/in/issourav)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2020 [Sourav Sharma](https://github.com/issourav).<br />
+This project is [MIT License](https://github.com/issourav/YodaSpeaks-Telegram-Bot/blob/master/LICENSE) licensed.
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
