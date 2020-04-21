@@ -4,7 +4,12 @@ import logging
 from telegram.ext import CommandHandler
 from telegram.ext import MessageHandler, Filters
 from telegram.ext import Updater
+import os
 
+logging.basicConfig(level=logging.INFO,
+					format="%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+logger = logging.getLogger()
+TOKEN = os.getenv("TOKEN")
 
 #start() is called when bot receives a /start command 
 def start(update, context):
@@ -37,22 +42,23 @@ def translator(update, context):
 	#context.bot.send_message(chat_id=update.effective_chat.id, text=msg)
 	update.message.reply_text(msg)
 
-def main(webhook_url=None):
-	TOKEN  = '<Enter your Telegram Bot Token value here>'
-	updater = Updater(token=TOKEN, use_context=True)
-#The use_context=True is a special argument only needed for version 12 of the library. The default value is False.
-	dispatcher = updater.dispatcher
-	logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-					 level=logging.INFO)
-	start_handler = CommandHandler('start', start)
-	dispatcher.add_handler(start_handler)
-	#echo_handler = MessageHandler(Filters.text, echo)
-	#dispatcher.add_handler(echo_handler)
-	translator_handler = MessageHandler(Filters.text,translator)
-	dispatcher.add_handler(translator_handler)
-	#to start the bot
-	updater.start_polling()
-	updater.idle()
 
+
+def run(updater):
+	PORT = int(os.environ.get("PORT", "8443"))
+	HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME")
+	updater.start_webhook(listen="0.0.0.0",
+	port=PORT,
+	url_path=TOKEN)
+	updater.bot.set_webhook("https://{}.herokuapp.com/{}".format(HEROKU_APP_NAME,TOKEN))
+
+def run1(updater):
+		updater.start_polling()
 if __name__ == '__main__':
-	main()
+	logger.info("Starting bot")
+	updater = Updater(token=TOKEN, use_context=True)
+	updater.dispatcher.add_handler(CommandHandler("start", start))
+	translator_handler = MessageHandler(Filters.text,translator)
+	updater.dispatcher.add_handler(translator_handler)
+	run(updater)
+	
