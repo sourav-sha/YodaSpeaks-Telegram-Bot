@@ -15,6 +15,7 @@
 
 ### 🏠 [Homepage](https://github.com/issourav/YodaSpeaks-Telegram-Bot)
 ### ✨ [Demo](https://github.com/issourav/YodaSpeaks-Telegram-Bot/blob/master/demoVideo.mp4)
+### ✨ [Telegram Link](https://t.me/netdotbot)
 ## Author
 
 👤 **Sourav Sharma**
