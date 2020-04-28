@@ -11,7 +11,7 @@
   </a>
 </p>
 
-> A Telegram Bot in Python which converts from English to Yoda speak. Yoda is a fictional character from the Movie star wars.
+> A Telegram Bot in Python which converts from English to Yoda speak deployed on Heroku using the Heroku CLI. Yoda is a fictional character from the Movie star wars.
 <img src="demo1.gif" alt="demo" style="width: 640px;"/>
 
 
