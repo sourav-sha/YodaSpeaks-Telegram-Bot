@@ -12,6 +12,8 @@
 </p>
 
 > A Telegram Bot in Python which converts from English to Yoda speak. Yoda is a fictional character from the Movie star wars.
+<img src="demo1.gif" alt="demo" style="width: 640px;"/>
+
 
 ### 🏠 [Homepage](https://github.com/issourav/YodaSpeaks-Telegram-Bot)
 ### ✨ [Demo](https://github.com/issourav/YodaSpeaks-Telegram-Bot/blob/master/demoVideo.mp4)
