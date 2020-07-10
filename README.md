@@ -25,7 +25,7 @@
 * Website: https://issourav.github.io/
 * Twitter: [@issourav](https://twitter.com/issourav)
 * Github: [@issourav](https://github.com/issourav)
-* LinkedIn: [@issourav](https://linkedin.com/in/issourav)
+* LinkedIn: [@issourav](https://linkedin.com/in/souravsha)
 
 ## Show your support
 
